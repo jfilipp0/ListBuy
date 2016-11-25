@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "=//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <!-- Dialect and Driver for Oracle -->
+  <property name="dialect">ca.tds.op.hibernate.Oracle10gDialectExtended</property>
+  <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  
+  <!-- Details Database -->
+  <property name="connection.username">jf</property>
+  <property name="connection.password">aluno</property>
+  <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+  <property name="connection.pool_size">1</property>
+  <property name="hibernate.default_schema">jf</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  
+  <!-- Additional Property -->
+  <property name="show_sql">true </property>
+  <property name="hbm2ddl.auto">validate</property>
+  
+  
+	<!-- <property name="hbm2ddl.auto">create </property> -->
+	<!-- <property name="hbm2ddl.auto">create-drop </property> -->
+	<!-- <property name="hbm2ddl.auto">update </property> -->
+	<!-- <property name="hbm2ddl.auto">validate </property> -->
+  
+  <!-- Mapping Class -->
+  <mapping class="ca.tds.op.model.Categoria"/>
+  <mapping class="ca.tds.op.model.Item"/>
+  <mapping class="ca.tds.op.model.ListaCompra"/>
+  <mapping class="ca.tds.op.model.Loja"/>
+  <mapping class="ca.tds.op.model.Pessoa"/>
+  <mapping class="ca.tds.op.model.Produto"/>
+  
+ </session-factory>
+</hibernate-configuration>
