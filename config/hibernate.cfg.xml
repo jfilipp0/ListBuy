@@ -4,15 +4,15 @@
 <hibernate-configuration>
  <session-factory>
   <!-- Dialect and Driver for Oracle -->
-  <property name="dialect">ca.tds.op.hibernate.Oracle10gDialectExtended</property>
-  <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
   
   <!-- Details Database -->
-  <property name="connection.username">jf</property>
-  <property name="connection.password">aluno</property>
-  <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+  <property name="connection.username">u570242745_filip</property>
+  <property name="connection.password">SQL7355608</property>
+  <property name="connection.url">mysql.hostinger.com.br</property>
   <property name="connection.pool_size">1</property>
-  <property name="hibernate.default_schema">jf</property>
+  <property name="hibernate.default_schema">u570242745_filip</property>
   <property name="hibernate.current_session_context_class">thread</property>
   
   <!-- Additional Property -->
